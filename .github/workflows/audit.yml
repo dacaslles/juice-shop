@@ -30,7 +30,7 @@ jobs:
           echo "Buscando archivos de cobertura generados..."
           find . -name "lcov.info"
 
-      - name: SonarCloud Scan
+      - name: SonarQube Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
